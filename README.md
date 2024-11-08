@@ -3,7 +3,7 @@
 This project is a clone of the **Book My Show** ticket-booking platform, built using **React**, **Vite**, **Redux Toolkit**, **React Router**, **Tailwind CSS**, and **Heroicons**. It provides a similar user experience with features for browsing and booking shows, and a fully responsive UI.
 
 ### Live Demo
-[Book My Show Clone Live Demo](https://sonali-book-my-show.netlify.app)
+[Book My Show Live Demo](https://sonali-book-my-show.netlify.app)
 
 ### GitHub Repository
 [GitHub Link](https://github.com/sonalisingh30/Book_My_Show)
