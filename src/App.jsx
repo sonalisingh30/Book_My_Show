@@ -1,5 +1,6 @@
 import {
   BrowserRouter as Router,
+  // eslint-disable-next-line no-unused-vars
   Navigate,
   Route,
   Routes,
@@ -18,13 +19,11 @@ function App() {
     <SearchProvider>
       <Router>
         <Routes>
-          {/* Redirect root to /home */}
-          <Route path="/" element={<Navigate replace to="/movies" />} />
           {/* All public routes come under AppLayout */}
           <Route path="/" element={<AppLayout />}>
-
-            <Route path="Home" element={<Home />} />
-
+            {/* Set Movie as the default page under AppLayout */}
+            <Route index element={<Movie />} />
+            <Route path="home" element={<Home />} />
             <Route path="movies" element={<Movie />} />
             <Route path="streams" element={<Stream />} />
             <Route path="events" element={<Events />} />
