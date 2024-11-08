@@ -75,11 +75,10 @@ function Movie() {
             }}
             centeredSlidesBounds={true}
             spaceBetween={30}
-            // navigation={{
-            //   nextEl: ".custom-next",
-            //   prevEl: ".custom-prev",
-            // }}
-            navigation={true}
+            navigation={{
+              nextEl: ".custom-next-movie",
+              prevEl: ".custom-prev-movie",
+            }}
             modules={[Navigation]}
             loop={true}
             initialSlide={1}
@@ -121,12 +120,12 @@ function Movie() {
               </SwiperSlide>
             ))}
             {/* Custom Navigation Buttons */}
-            {/* <div className="  right-[2rem] top-1/2 transform -translate-y-1/2 ">
+            <div className="custom-next-movie custom-swiper-button absolute right-4 top-1/2 transform -translate-y-1/2">
               <FaGreaterThan />
             </div>
-            <div className="custom-prev custom-swiper-button absolute left-4 top-1/2 transform -translate-y-1/2">
+            <div className="custom-prev-movie custom-swiper-button">
               <FaLessThan />
-            </div> */}
+            </div>
           </Swiper>
         </div>
       ) : (
